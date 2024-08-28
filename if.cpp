@@ -7,7 +7,7 @@
  ****************************************************************/
 
 #include <iostream>
-using namespace std;
+using std::cin, std::cout;
 #include <cstdio>
 
 int main() {
