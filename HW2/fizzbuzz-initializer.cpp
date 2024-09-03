@@ -10,11 +10,11 @@ float read_number(){
 int main() {
 
   if ( int i = read_number(); i % 3 == 0 and i % 5 == 0 )
-    cout << "FizzBuzz" << "\n";
+    cout << "FizzBuzz!" << "\n";
   else if ( i % 3 == 0 )
-    cout << "Fizz" << "\n";
+    cout << "Fizz!" << "\n";
   else if ( i % 5 == 0 )
-    cout << "Buzz" << "\n";
+    cout << "Buzz!" << "\n";
  
   return 0;
 }
