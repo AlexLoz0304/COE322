@@ -7,7 +7,8 @@ int main() {
         cout << i/10.0 << "\n";
     }
 
-    for (float i = .1; i <= 1; i += .1) {
+    for (float i = .1; i <= 1.1; i += .1) {
+        cout << i << 1-i << "\n";
         cout << i << "\n";
     }
 }
