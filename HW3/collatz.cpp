@@ -7,10 +7,10 @@ using namespace std;
 int main() {
 
     int counter = 0;
-    int x;
+    long  int x;
     int j;
 
-    for (int i = 1; i <= 1e6; i++) {
+    for (int i = 1; i <= 1e3; i++) {
 
         x = i;
         j = 0;
@@ -28,7 +28,7 @@ int main() {
             counter = j;
             cout << i << " is the new longest sequence with " << j << " iterations" << "\n";
         }
-
+      
     }
     return 0;
 }
