@@ -5,8 +5,7 @@
 #include <functional>
 using namespace std;
 
-double newton_root ( function< double(double) > f,
-function< double(double) > fprime ) {
+double newton_root ( function< double(double) > f, function< double(double) > fprime ) {
   
   double  x = 100;
   double funcval = fprime(x);
@@ -20,7 +19,8 @@ function< double(double) > fprime ) {
     i ++;
   }
   cout << "It took " << i << " iterations" << "\n";
-}
+  return x;
+ }
 
 int main() {
 
@@ -28,6 +28,7 @@ int main() {
   auto fprime = [] (double x) { return 2 * x;};
 
   double root = newton_root( f,fprime );
+  cout << root << "\n";
   
   return 0;
 }
