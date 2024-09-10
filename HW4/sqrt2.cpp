@@ -17,7 +17,7 @@ double deriv(double x){
 
 int main() {
   
-  double  x = 2;
+  double  x = 100;
   double funcval = fx(x);
   int i = 0;
   while (abs(funcval) > 1.e-8 && i < 100) {
