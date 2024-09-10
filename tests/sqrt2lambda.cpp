@@ -7,8 +7,8 @@ using namespace std;
 
 int main() {
 
-  auto f = [] (double x) { return (x * x) - 2;}
-  auto fprime = [] (double x) { return 2 * x;}
+  auto f = [] (double x) { return (x * x) - 2;};
+  auto fprime = [] (double x) { return 2 * x;};
   
   double  x = 100;
   double funcval = fprime(x);
