@@ -5,16 +5,6 @@
 #include <functional>
 using namespace std;
 
-double newton_root ( function< double(double) > f){
-
-    double h = 1e-6;
-
-    auto fprime = [h] (function< double(double) > f, double x) { return (f(x + h) - f(x))/h};
-
-    return newton_root(f,fprime)
-
-}
-
 double newton_root ( function< double(double) > f, function< double(double) > fprime ) {
   
   double  x = 1000;
@@ -29,6 +19,17 @@ double newton_root ( function< double(double) > f, function< double(double) > fp
   }
   return x;
  }
+
+double newton_root ( function< double(double) > f){
+
+    double h = 1e-6;
+
+    auto fprime = [h] (function< double(double) > f, double x) { return (f(x + h) - f(x))/h};
+
+    return newton_root(f,fprime)
+
+}
+
 
 int main() {
 
