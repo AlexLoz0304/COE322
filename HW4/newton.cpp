@@ -5,13 +5,6 @@
 #include <functional>
 using namespace std;
 
-double newton_root ( function< double(double) > f ) {
-  
-  auto fprime  = [f] ( double x) { return (f(x + 1e-6) - f(x))/1e-6;};
-
-  return newton_root(f,fprime);
- }
-
 double newton_root ( function< double(double) > f, function< double(double) > fprime ) {
   
   double  x = 100;
@@ -26,6 +19,13 @@ double newton_root ( function< double(double) > f, function< double(double) > fp
   }
   cout << "It took " << i << " iterations" << "\n";
   return x;
+ }
+
+ double newton_root ( function< double(double) > f ) {
+  
+  auto fprime  = [f] ( double x) { return (f(x + 1e-6) - f(x))/1e-6;};
+
+  return newton_root(f,fprime);
  }
 
 
