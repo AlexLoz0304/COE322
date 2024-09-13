@@ -4,18 +4,19 @@
 #include <iostream>
 #include <functional>
 using namespace std;
-
+ 
 double newton_root ( function< double(double) > f){
 
     double h = 1e-6;
 
-    auto fprime = [h] (function< double(double) > f, double x) { return (f(x + h) - f(x))/h};
+    auto fprime = [h] (function< double(double) > f, double x) { return (f(x + h) - f(x))/h;};
 
-    return newton_root(f,fprime)
+    return newton_root(f,fprime);
 
 }
 
-double newton_root ( function< double(double) > f, function< double(double) > fprime ) {
+double newton_root ( function< double(double) > f,
+		     function< double(function <double(double) > f,double) > fprime ) {
   
   double  x = 1000;
   double funcval = fprime(f,x);
