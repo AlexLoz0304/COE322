@@ -23,7 +23,7 @@ double newton_root ( function< double(double) > f, function< double(double) > fp
 
  double newton_root ( function< double(double) > f ) {
   
-  auto fprime  = [f] ( double x) { return (f(x + 1e-6) - f(x))/1e-6;};
+  auto fprime  = [f] ( double x ) { return (f(x + 1e-6) - f(x))/1e-6;};
 
   return newton_root(f,fprime);
  }
