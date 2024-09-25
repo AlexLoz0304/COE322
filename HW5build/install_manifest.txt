@@ -1,0 +1,2 @@
+/home/alozano0304/COE322/HW5install/./fizzbuzz
+/home/alozano0304/COE322/HW5install/./fizzbuzz.sh

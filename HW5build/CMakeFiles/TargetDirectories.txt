@@ -1,0 +1,7 @@
+/home/alozano0304/COE322/HW5build/CMakeFiles/fizzbuzz.dir
+/home/alozano0304/COE322/HW5build/CMakeFiles/edit_cache.dir
+/home/alozano0304/COE322/HW5build/CMakeFiles/rebuild_cache.dir
+/home/alozano0304/COE322/HW5build/CMakeFiles/list_install_components.dir
+/home/alozano0304/COE322/HW5build/CMakeFiles/install.dir
+/home/alozano0304/COE322/HW5build/CMakeFiles/install/local.dir
+/home/alozano0304/COE322/HW5build/CMakeFiles/install/strip.dir
