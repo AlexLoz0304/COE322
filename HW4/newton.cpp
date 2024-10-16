@@ -1,4 +1,4 @@
-\1;95;0c//Alexander Lozano
+//Alexander Lozano
 //AJL4846
 //alozano0304
 #include <iostream>
