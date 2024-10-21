@@ -6,16 +6,15 @@
 #include <algorithm>
 #include <ranges>
 using namespace std;
-namespace rng = std::ranges;
 
 int main () {
   int check = 1E4;
-  auto nums = rng::views::iota(2,check);
-     rng::for_each
+  auto nums = ranges::views::iota(2,check);
+     ranges::for_each
      (nums,  [] (int i) {
       int total = 1;
-      auto divisors = rng::views::iota(2,i);
-      rng::for_each
+      auto divisors = ranges::views::iota(2,i);
+      ranges::for_each
       (divisors, [&total,i] (int j){
 	if (i % j == 0){
 	  total +=  j;
