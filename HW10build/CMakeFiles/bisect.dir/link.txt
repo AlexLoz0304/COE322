@@ -1,0 +1,1 @@
+/opt/intel/oneapi/compiler/2024.2/bin/icpx CMakeFiles/bisect.dir/zeroclasstest.cpp.o CMakeFiles/bisect.dir/zeroclasslib.cpp.o -o bisect   -L/opt/local/software/installation-catch2-3.5.4-isp-oneapi2024/lib64  -Wl,-rpath,/opt/local/software/installation-catch2-3.5.4-isp-oneapi2024/lib64: -lCatch2Main -lCatch2 

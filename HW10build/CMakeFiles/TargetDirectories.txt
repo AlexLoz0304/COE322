@@ -1,0 +1,7 @@
+/home/alozano0304/COE322/HW10build/CMakeFiles/bisect.dir
+/home/alozano0304/COE322/HW10build/CMakeFiles/edit_cache.dir
+/home/alozano0304/COE322/HW10build/CMakeFiles/rebuild_cache.dir
+/home/alozano0304/COE322/HW10build/CMakeFiles/list_install_components.dir
+/home/alozano0304/COE322/HW10build/CMakeFiles/install.dir
+/home/alozano0304/COE322/HW10build/CMakeFiles/install/local.dir
+/home/alozano0304/COE322/HW10build/CMakeFiles/install/strip.dir
