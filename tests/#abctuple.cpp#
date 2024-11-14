@@ -30,12 +30,20 @@ double discriminant
   return b*b-4*a*c;
 }
 
-pair<double,double> abc_roots(quadratic q){
+ pair<double,double> abc_roots(quadratic q){
   auto [a,b,c] = q;
   return { ( -b + std::sqrt(discriminant(q)) ) / (2 * a), (-b - std::sqrt(discriminant(q)) ) / (2 * a)};
 }
 
-
+optional<string> how_many_roots( quadratic q ) {
+  if (discriminant(q) < 0)
+    return {};
+  else if (discriminant(q) == 0)
+    return "There is 1 root";
+  else 
+    return "There is 2 roots";
+}
+variant<monostate,double,pair<double,double>> abc_cases( quadratic q )
 
 
 int main() {
@@ -64,13 +72,13 @@ int main() {
   auto d = discriminant( sunk );
   cout << "discriminant: "
        << d << '\n';
-#if 0
+  
   auto num_solutions = how_many_roots(sunk);
   if ( not num_solutions.has_value() )
     cout << "none\n";
   else
     cout << num_solutions.value() << '\n';
-#endif
+
   auto roots = abc_roots( sunk );
   auto [xplus,xminus] = roots;
   cout << xplus << "," << xminus << '\n';
